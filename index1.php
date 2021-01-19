@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -11,11 +10,14 @@
     <?php
         //students
         $students = ['Hulk', 'Iron Man', 'Wonder Woman', 'Black Widow', 'Malicia'];
-     ?>
-     <ul>
-       <?php
-            // TODO votre code ici
-       ?>
-     </ul>
-
+    ?>
+    <ul>
+      <?php
+          foreach ($students as $item){
+              echo "<li>$item est élève de la classe</li>";
+          }
+      ?>
+    </ul>
     <!-- Incluez le fichier index2.php ici bas de manière a obtenir la suite du code HTML. -->
+    <?php
+    require "./index2.php";
